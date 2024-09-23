@@ -9,14 +9,14 @@
 
 > Blockquote
 
-##Ordered List
+## Ordered List
 
 1. first
 2. second
 3. third
 4. etc
 
-###Unordered List
+## Unordered List
 - first
 - second
 - third
@@ -24,24 +24,24 @@
 
 `code` ````` not''''' (next to 1)
 
-##Horizontal Rule
+## Horizontal Rule
 ---
 
-##Link
+## Link
 [title](https://blahblah.com)
 
-##Image
+## Image
 ![alt text](image.jpg)
 
-#Extended Syntax
+# Extended Syntax
 
-##Table
+## Table
 | Syntax | Description |
 |--------------|--------------|
 | Header | Title |
 | Paragraph | Text |
 
-##Fenced Code Block
+## Fenced Code Block
 ```
 {
 "firstName": "John",
@@ -49,3 +49,34 @@
 "age": "245"
 }
 ```
+## Footnote
+Here's a sentence with a  footnote. [^1]
+[^1]: this is the footnote
+
+## Heading ID
+### My Great Heafing {#custom-id}
+
+## Definition List
+term
+: definition
+
+## Strikethrough
+~~Strike this~~
+
+## Tack List
+
+- [x] Check this box
+- [ ] Check this box
+- [ ] Don't check this box
+
+## Emoji
+:joy:
+
+## Highlight
+==Highlight==
+
+## Subscript
+H~2~SO~4~
+
+## Superscript
+X^2^
