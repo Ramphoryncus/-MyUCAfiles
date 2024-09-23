@@ -54,7 +54,7 @@ Here's a sentence with a  footnote. [^1]
 [^1]: this is the footnote
 
 ## Heading ID
-### My Great Heafing {#custom-id}
+### My Great Heading {#custom-id}
 
 ## Definition List
 term
