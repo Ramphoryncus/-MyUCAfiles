@@ -1,7 +1,21 @@
-## Basic Syntax
+# Basic Syntax
+
 `code` ````` not''''' (next to 1)
 
-### Headings
+## CODE
+
+```
+`code`
+
+\``` x3 before and after \``` x3 for block code (using backslash to escape character that would be used to format text)
+```
+### Output
+
+`code`
+
+\``` x3 before and after \``` x3 for block code (using backslash to escape character that would be used to format text)
+
+## Headings
 Do this `# heading` not this `#heading`
 ```
 # heading 1
@@ -25,7 +39,7 @@ Do this `# heading` not this `#heading`
 ##### heading 5
 ###### heading 6
 
-### Alternative Syntax
+## Alternative Syntax
 ```
 heading 1
 ================
@@ -104,12 +118,11 @@ Be**Bold**Now
 __Bold Text___
 
 Be**Bold**Now  
-Do this `Be**Bold**Now**` not this `Be__Bold__Now`
+Do this `Be**Bold**Now` not this `Be__Bold__Now`
 
 ## Bold and Italics
 
 ```
-
 ***Bold Italics***
 
 ___Bold Italics___
@@ -139,7 +152,6 @@ Do this `B***old***Italics` not this `B___old___Italics`
 Put BLANK lines BEFORE and AFTER blockquotes
 
 ```
-
 > Blockquote
 ```
 
@@ -151,7 +163,6 @@ Put BLANK lines BEFORE and AFTER blockquotes
 Add a > on the blank line between paragraphs
 
 ```
-
 > Paragraph 1
 >
 > Paragraph 2
@@ -166,7 +177,6 @@ Add a > on the blank line between paragraphs
 ## Nested Blockquotes
 
 ```
-
 > Blockquote
 >
 >> Nested Blockquote
@@ -183,7 +193,6 @@ Add a > on the blank line between paragraphs
 ## Blockquotes with Other Elements
 
 ```
-
 > #### heading 4
 >
 > - Unordered
@@ -205,7 +214,6 @@ Add a > on the blank line between paragraphs
 ## Ordered List
 
 ```
-
 1. first
 2. second
 3. third
@@ -260,7 +268,6 @@ Add a > on the blank line between paragraphs
 ## Unordered List
 
 ```
-
 - first
 - second
 - third
@@ -346,31 +353,42 @@ Add a > on the blank line between paragraphs
 - etc
 ---
 
-## CODE
-
-```
-`code`
-```
-### Output
-
-`code`
-
 
 ## Horizontal Rule
 ```
 ---
+***
+___
 ```
 ### Output
 ---
+***
+___
 
-## Link
+## Link (and Title "with description")
 
 ```
-[title](https://blahblah.com)
+[title](https://blahblah.com "This is the description")
 ```
 ### Output
 
-[title](https://blahblah.com)
+[title](https://blahblah.com "This is the description")
+
+
+## URLs and Email Addresses
+
+```
+<https://www.markdownguide.org>
+<fake@email.com>
+```
+
+### Output
+
+<https://www.markdownguide.org>
+<fake@email.com>
+
+
+## Formatting Links
 
 
 ## Image
@@ -450,20 +468,53 @@ term
 
 term
 : definition
+
 ## Strikethrough
+```
+~~Strike this~~
+```
+
+### Output
+
 ~~Strike this~~
 
+
 ## Tack List
+
+```
+- [x] Check this box
+- [ ] Check this box
+- [ ] Don't check this box
+```
+
+### Output
 
 - [x] Check this box
 - [ ] Check this box
 - [ ] Don't check this box
 
+
 ## Emoji
+
+```
 :joy:
+:cup_with_straw:
+:aquarius:
+```
+### Output
+
+:joy:
+:cup_with_straw:
+:aquarius:
 
 ## Highlight
+```
 ==Highlight==
+```
+
+### Output
+
+==HighLIGHT==
 
 ## Subscript
 H~2~SO~4~
