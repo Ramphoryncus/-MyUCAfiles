@@ -1,47 +1,409 @@
 ## Basic Syntax
+`code` ````` not''''' (next to 1)
+
+### Headings
+Do this `# heading` not this `#heading`
 ```
+# heading 1
+
+## heading 2
+
+### heading 3
+
+#### heading 4
+
+##### heading 5
+
+###### heading 6
+```
+### Output
+
 # heading 1
 ## heading 2
 ### heading 3
+#### heading 4
+##### heading 5
+###### heading 6
+
+### Alternative Syntax
+```
+heading 1
+================
+
+heading 2
+----------------
+```
+### Output
+
+heading 1
+================
+
+heading 2
+----------------
+
+## Paragraphs
+Use a BLANK line to separate lines of text to create a PARAGRAPH
+
+```
+First line.
+
+Second line.
+```
+
+### Output
+
+First line.
+
+Second line.
+
+## Line Breaks
+To create a line break or new line `(<br>)`, end a line with 2 or more SPACES then type RETURN
+
+```
+First line.
+Second line.
+```
+
+### Output
+
+First line.  
+Second line.
+
+
+## Italics
+
 ```
 *Italics*
+
+_Italics_
+
+An*Italics*Lesson
+```
+### Output
+
+*Italics*
+
+_Italics_
+
+An*Italics*Lesson  
+Do this `An*Italics*Lesson` not this `An_Italics_Lesson`
+
+## Bold Text
+
+```
 **Bold Text**
+
+__Bold Text__
+
+Be**Bold**Now
+```
+### Output
+
+**Bold Text**
+
+__Bold Text___
+
+Be**Bold**Now  
+Do this `Be**Bold**Now**` not this `Be__Bold__Now`
+
+## Bold and Italics
+
+```
+
+***Bold Italics***
+
+___Bold Italics___
+
+__*Bold Italics*__
+
+**_Bold Italics_**
+
+B***old***Italics
+```
+
+### Output
+
+***Bold Italics***
+
+___Bold Italics___
+
+__*Bold Italics*__
+
+**_Bold Italics_**
+
+B***old***Italics  
+Do this `B***old***Italics` not this `B___old___Italics`
+
+
+## Blockquote
+Put BLANK lines BEFORE and AFTER blockquotes
+
+```
+
+> Blockquote
+```
+
+### Output
 
 > Blockquote
 
+## Blockquotes with Paragraphs
+Add a > on the blank line between paragraphs
+
+```
+
+> Paragraph 1
+>
+> Paragraph 2
+```
+
+### Output
+
+> Paragraph 1
+>
+> Paragraph 2
+
+## Nested Blockquotes
+
+```
+
+> Blockquote
+>
+>> Nested Blockquote
+>
+```
+
+### Output
+
+> Blockquote
+>
+>> Nested Blockquote
+
+
+## Blockquotes with Other Elements
+
+```
+
+> #### heading 4
+>
+> - Unordered
+> - List
+>
+> *Italics* **Bold** ***Bold Italics***
+```
+
+### Output
+
+> #### heading 4
+>
+> - Unordered
+> - List
+>
+> *Italics* **Bold** ***Bold Italics***
+
+
 ## Ordered List
+
+```
 
 1. first
 2. second
 3. third
 4. etc
+---
+1. first
+1. second
+1. third
+1. etc
+---
+1. first
+6. second
+2. third
+9. etc
+---
+1. first
+2. second
+3. third
+    1. Indented first
+    2. Indented second
+4. etc
+---
+```
+
+### Output
+
+1. first
+2. second
+3. third
+4. etc
+---
+1. first
+1. second
+1. third
+1. etc
+---
+1. first
+6. second
+2. third
+9. etc
+---
+1. first
+2. second
+3. third
+    1. Indented first
+    2. Indented second
+4. etc
+---
+
+**2 `TAB`s for indent**
 
 ## Unordered List
+
+```
+
 - first
 - second
 - third
 - etc
+---
+* first
+* second
+* third
+* etc
+---
++ first
++ second
++ third
++ etc
+---
+- first
+- second
+- third
+    - Indented first
+    - Indented second
+- etc
+---
+```
 
-`code` ````` not''''' (next to 1)
+### Output
+
+- first
+- second
+- third
+- etc
+---
+* first
+* second
+* third
+* etc
+---
++ first
++ second
++ third
++ etc
+---
+- first
+- second
+- third
+    - Indented first
+    - Indented second
+- etc
+---
+
+## Ordered and Unordered List Nesting
+
+```
+1. first
+2. second
+3. third
+    - Unordered first
+    - Unordered second
+4. etc
+---
+- first
+- second
+- third
+    1. Ordered first
+    2. Ordered second
+- etc
+---
+```
+
+### Output
+
+1. first
+2. second
+3. third
+    - Unordered first
+    - Unordered second
+4. etc
+---
+- first
+- second
+- third
+    1. Ordered first
+    2. Ordered second
+- etc
+---
+
+## CODE
+
+```
+`code`
+```
+### Output
+
+`code`
+
 
 ## Horizontal Rule
+```
+---
+```
+### Output
 ---
 
 ## Link
+
+```
+[title](https://blahblah.com)
+```
+### Output
+
 [title](https://blahblah.com)
 
+
 ## Image
+
+```
 ![alt text](image.jpg)
+```
+### Output
+
+![alt text](image.jpg)
+
 
 # Extended Syntax
 
 ## Table
+
+```
+| Syntax | Description |
+|--------------|--------------|
+| Header | Title |
+| Paragraph | Text |
+```
+
+### Output
+
 | Syntax | Description |
 |--------------|--------------|
 | Header | Title |
 | Paragraph | Text |
 
+
 ## Fenced Code Block
+
 ```
 {
 "firstName": "John",
@@ -49,17 +411,45 @@
 "age": "245"
 }
 ```
+### Output
+
+{
+"firstName": "John",
+"lastName": "Smith",
+"age": "245"
+}
+
 ## Footnote
+```
+Here's a sentence with a  footnote. [^1]
+[^1]: this is the footnote
+```
+### Output
+
 Here's a sentence with a  footnote. [^1]
 [^1]: this is the footnote
 
 ## Heading ID
+
+```
+### My Great Heading {#custom-id}
+```
+
+### Output
+
 ### My Great Heading {#custom-id}
 
+
 ## Definition List
+
+```
 term
 : definition
+```
+### Output
 
+term
+: definition
 ## Strikethrough
 ~~Strike this~~
 
