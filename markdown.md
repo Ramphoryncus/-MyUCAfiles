@@ -402,7 +402,7 @@ ___
 
 ### Output
 
-<https://www.markdownguide.org>
+<https://www.markdownguide.org>   
 <fake@email.com>
 
 
