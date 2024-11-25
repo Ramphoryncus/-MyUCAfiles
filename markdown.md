@@ -497,27 +497,50 @@ term
 ## Emoji
 
 ```
+:joy:   3 spaces after for new line   
+:cup_with_straw:   
+:aquarius:
+or you get this
 :joy:
 :cup_with_straw:
 :aquarius:
 ```
 ### Output
 
+:joy:   3 spaces after for new line   
+:cup_with_straw:   
+:aquarius:   
+or you get this   
 :joy:
 :cup_with_straw:
 :aquarius:
+
 
 ## Highlight
 ```
-==Highlight==
+<mark>HighLIGHT</mark>
 ```
 
 ### Output
 
-==HighLIGHT==
+<mark>HighLIGHT</mark>
+
 
 ## Subscript
-H~2~SO~4~
+**REMEMBER** `<sub></sub>` ~~**NOT**~~ `<sub/>`
+```
+H<sub>2</sub>SO<sub>4</sub>
+```
+### Output
+
+H<sub>2</sub>SO<sub>4</sub>
+
 
 ## Superscript
-X^2^
+**REMEMBER** `<sup></sup>` ~~**NOT**~~ `<sup/>`
+```
+X<sup>2</sup>
+```
+### Output
+
+X<sup>2</sup>
