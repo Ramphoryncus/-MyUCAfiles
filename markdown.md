@@ -1,5 +1,5 @@
-# Basic Syntax
-
+# **_Basic Syntax_**
+---
 `code` ````` not''''' (next to 1)
 
 ## CODE
@@ -14,6 +14,25 @@
 `code`
 
 \``` x3 before and after \``` x3 for block code (using backslash to escape character that would be used to format text)
+
+
+## Fenced Code Block
+
+```
+{
+"firstName": "John",
+"lastName": "Smith",
+"age": "245"
+}
+```
+### Output
+
+{
+"firstName": "John",
+"lastName": "Smith",
+"age": "245"
+}
+
 
 ## Headings
 Do this `# heading` not this `#heading`
@@ -180,7 +199,6 @@ Add a > on the blank line between paragraphs
 > Blockquote
 >
 >> Nested Blockquote
->
 ```
 
 ### Output
@@ -419,23 +437,6 @@ ___
 | Header | Title |
 | Paragraph | Text |
 
-
-## Fenced Code Block
-
-```
-{
-"firstName": "John",
-"lastName": "Smith",
-"age": "245"
-}
-```
-### Output
-
-{
-"firstName": "John",
-"lastName": "Smith",
-"age": "245"
-}
 
 ## Footnote
 ```
