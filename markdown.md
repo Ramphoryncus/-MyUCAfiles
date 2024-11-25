@@ -406,17 +406,66 @@ ___
 <fake@email.com>
 
 
-## Formatting Links
+# Formatting Links
+## The First Part
+```
+[link][1]
+[link] [1]
+```
+### Output
 
+[link][1]   
+[link] [1]
+
+## The Second Part
+```
+[1]: https://blahblah.com
+[1]: https://blahblah.com "blah"
+[1]: https://blahblah.com 'blah'
+[1]: https://blahblah.com (blah)
+[1]: <https://blahblah.com> "blah"
+[1]: <https://blahblah.com> 'blah'
+[1]: <https://blahblah.com> (blah)
+```
+### Output
+**Not Shown**
+
+[1]: https://blahblah.com
+[1]: https://blahblah.com "blah"
+[1]: https://blahblah.com 'blah'
+[1]: https://blahblah.com (blah)
+[1]: <https://blahblah.com> "blah"
+[1]: <https://blahblah.com> 'blah'
+[1]: <https://blahblah.com> (blah)
+
+## Links in Text
+```
+Text here [blah](https://blahblah.com "blah") text after   
+Text here [blah][1] text after   
+[1]: <https://blahblah.com> "blah"
+```
+### Output
+
+Text here [blah](https://blahblah.com "blah") text after   
+Text here [blah][1] text after   
+[1]: <https://blahblah.com> "blah"
+
+### Additional
+
+HTML link would be `<a href="https://blahblah.com" title="blah">blahblah</a>`
+
+any spaces fill them with %20 and parentheses inside (), with %28 for (, and %29 for).
 
 ## Image
 
 ```
 ![alt text](image.jpg)
+[![alt text](image.jpg)](imagelink.com)
 ```
 ### Output
 
-![alt text](image.jpg)
+![alt text](image.jpg)   
+[![alt text](image.jpg)](imagelink.com)
 
 
 # Extended Syntax
@@ -480,7 +529,7 @@ term
 ~~Strike this~~
 
 
-## Tack List
+## Task List
 
 ```
 - [x] Check this box
@@ -498,7 +547,7 @@ term
 ## Emoji
 
 ```
-:joy:   3 spaces after for new line   
+:joy:   2 or more spaces after for new line   
 :cup_with_straw:   
 :aquarius:
 or you get this
@@ -508,7 +557,7 @@ or you get this
 ```
 ### Output
 
-:joy:   3 spaces after for new line   
+:joy:   2 or more spaces after for new line   
 :cup_with_straw:   
 :aquarius:   
 or you get this   
@@ -531,17 +580,60 @@ or you get this
 **REMEMBER** `<sub></sub>` ~~**NOT**~~ `<sub/>`
 ```
 H<sub>2</sub>SO<sub>4</sub>
+H<sub>2<sub>SO</sub>4</sub>4
 ```
 ### Output
 
-H<sub>2</sub>SO<sub>4</sub>
+H<sub>2</sub>SO<sub>4</sub>   
+H<sub>2<sub>SO</sub>4</sub>4
 
 
 ## Superscript
 **REMEMBER** `<sup></sup>` ~~**NOT**~~ `<sup/>`
 ```
-X<sup>2</sup>
+X<sup>2</sup>   
+X<sup>2<sup>2</sup>2</sup>2
 ```
 ### Output
 
-X<sup>2</sup>
+X<sup>2</sup>   
+X<sup>2<sup>2</sup>2</sup>2
+
+## Escaping Characters
+```
+You can use \\backslash to escape the following characters
+|Character|Name|
+|---------|---------|
+|\\   |backslash|
+|\`|backtick|
+|\*|asterisk|
+|\_|underscore|
+|\{}|curly braces|
+|\[]|brackets|
+|\<>|angle brackets|
+|\()|parentheses|
+|\#|hashtag or pound sign|
+|\+|plus sign|
+|\-|minus sign (hyphen)|
+|\.|dot|
+\!|exclamation mark|
+|\|   |pipe|
+```
+
+You can use \\backslash to escape the following characters
+|Character|Name|
+|---------|---------|
+|\\   |backslash|
+|\`|backtick|
+|\*|asterisk|
+|\_|underscore|
+|\{}|curly braces|
+|\[]|brackets|
+|\<>|angle brackets|
+|\()|parentheses|
+|\#|hashtag or pound sign|
+|\+|plus sign|
+|\-|minus sign (hyphen)|
+|\.|dot|
+\!|exclamation mark|
+|\|   |pipe|
