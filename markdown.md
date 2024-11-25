@@ -5,13 +5,13 @@
 ## CODE
 
 ```
-`code`
+inline `code`
 
 \``` x3 before and after \``` x3 for block code (using backslash to escape character that would be used to format text)
 ```
 ### Output
 
-`code`
+inline `code`
 
 \``` x3 before and after \``` x3 for block code (using backslash to escape character that would be used to format text)
 
@@ -32,6 +32,21 @@
 "lastName": "Smith",
 "age": "245"
 }
+
+
+## Syntax Highlighting
+
+```
+\```language
+// code
+\```
+```
+### Output
+
+```
+language
+// code
+```
 
 
 ## Headings
