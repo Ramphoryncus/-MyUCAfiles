@@ -631,7 +631,7 @@ You can use \\backslash to escape the following characters
 |\+|plus sign|
 |\-|minus sign (hyphen)|
 |\.|dot|
-\!|exclamation mark|
+|\!|exclamation mark|
 |\|   |pipe|
 ```
 
